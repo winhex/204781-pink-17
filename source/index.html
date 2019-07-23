@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle visually-hidden" type="button">Открытие/Закрытие меню</button>
+      <nav class="page-header__main-nav main-nav">
+        <button class="main-nav__toggle" type="button" >
+          <span class="visually-hidden">Открытие/Закрытие меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item">
@@ -49,7 +52,10 @@
         <p class="app__platforms">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8<p>
       </section>
       <section class="suggestions">
-        <b class="suggestions__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</b>
+        <div class="suggestions__slogan">
+          <p>Устали от серости мегаполиса?</p>
+          <p>Нам есть, что вам предложить!</p>
+        </div>
         <ul class="suggestions__list">
           <li class="suggestions__item">
             <h2 class="suggestions__title">Поднимает настроение</h2>
