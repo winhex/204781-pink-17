@@ -1,5 +1,8 @@
 .page-header {
+  position: relative;
+
   width: 320px;
+  height: 462px;
 
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -7,9 +10,7 @@
   font-weight: bold;
   color: #ffffff;
 
-  height: 462px;
-  background: url(../img/iphone-hand-mobile@1x.png) center bottom no-repeat,
-  url(../img/bg-back-mobile@1x.jpg) no-repeat;
+  background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
 
   &__logo {
     display: block;
@@ -28,4 +29,9 @@
   &__main-nav {
     text-align: center;
   }
+}
+
+.page-header--index {
+  background: url(../img/iphone-hand-mobile@1x.png) center bottom no-repeat,
+  url(../img/bg-back-mobile@1x.jpg) no-repeat;
 }
