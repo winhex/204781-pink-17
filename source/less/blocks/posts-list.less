@@ -1,0 +1,58 @@
+.posts-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-align: left;
+
+  &__item {
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    width: 280px;
+
+    background: #fefefe;
+  }
+
+  &__review {
+    margin-left: 17px;
+  }
+
+  &__author {
+    display: inline-block;
+
+    font-weight: bold;
+  }
+
+  &__time {
+    display: inline-block;
+
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  &__likes {
+    position: relative;
+
+    margin-left: 30px;
+
+    font-size: 12px;
+    color: #d22856;
+  }
+
+  &__likes::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -30px;
+
+    width: 13px;
+    height: 12px;
+
+    background: url(../img/icon-heart.svg);
+  }
+
+  &__image {
+    text-decoration: none;
+  }
+}
