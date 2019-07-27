@@ -1,46 +1,46 @@
 .posts-list {
-  margin: 0;
-  padding: 0;
+  .no-list;
 
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+
   text-align: left;
+}
 
-  &__item {
-    margin-left: 20px;
-    margin-bottom: 20px;
+.posts-list__item {
+  margin-left: 20px;
+  margin-bottom: 20px;
 
-    width: 280px;
+  width: 280px;
 
-    background: #fefefe;
-  }
+  background: #fefefe;
+}
 
-  &__review {
-    margin-left: 17px;
-  }
+.posts-list__review {
+  display: flex;
+  flex-direction: column;
 
-  &__author {
-    display: inline-block;
+  margin-left: 17px;
+}
 
-    font-weight: bold;
-  }
+.posts-list__author {
+  font-weight: bold;
+}
 
-  &__time {
-    display: inline-block;
+.posts-list__time {
+  font-size: 12px;
+  font-weight: 300;
+}
 
-    font-size: 12px;
-    font-weight: 300;
-  }
+.posts-list__likes {
+  position: relative;
 
-  &__likes {
-    position: relative;
+  margin-left: 30px;
 
-    margin-left: 30px;
+  font-size: 12px;
+  color: #d22856;
 
-    font-size: 12px;
-    color: #d22856;
-  }
-
-  &__likes::before {
+  &::before {
     content: "";
     position: absolute;
     top: 5px;
@@ -49,10 +49,10 @@
     width: 13px;
     height: 12px;
 
-    background: url(../img/icon-heart.svg);
+    background: url("/img/icon-heart.svg");
   }
+}
 
-  &__image {
-    text-decoration: none;
-  }
+.posts-list__image {
+  text-decoration: none;
 }
