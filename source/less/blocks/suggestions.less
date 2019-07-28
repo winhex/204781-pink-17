@@ -9,7 +9,6 @@
 .suggestions__list {
   .no-list;
 
-  list-style: none;
   background: #f2f2f2;
 }
 
@@ -26,15 +25,23 @@
 }
 
 .suggestions__description {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 33px;
-  margin-right: 33px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 259px;
 
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #283645;
+}
+
+.suggestions__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0;
+  padding: 0;
 }
