@@ -8,26 +8,32 @@
 }
 
 .posts-list__item {
+  display: flex;
+  flex-direction: column;
+
   margin-left: 20px;
   margin-bottom: 20px;
 
-  width: 280px;
+  max-width: 280px;
 
   background: #fefefe;
 }
 
 .posts-list__review {
-  display: flex;
-  flex-direction: column;
-
   margin-left: 17px;
 }
 
 .posts-list__author {
+  display: inline-block;
+  vertical-align: middle;
+
   font-weight: bold;
 }
 
 .posts-list__time {
+  display: inline-block;
+  vertical-align: middle;
+
   font-size: 12px;
   font-weight: 300;
 }
