@@ -1,7 +1,6 @@
 .page-header {
-  position: relative;
-
-  padding: 20px 0;
+  position: absolute;
+  z-index: 2;
 
   font-size: 18px;
   line-height: 32px;
@@ -9,9 +8,15 @@
   color: #ffffff;
 
   background: rgba(0, 0, 0, 0.3);
-  color: #ffffff;
+
+  &--open {
+    position: relative;
+    background: #283645;
+  }
 }
 
-.page-header__main-nav {
-  text-align: center;
+.page-header__logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px;
 }
