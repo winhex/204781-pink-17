@@ -61,3 +61,26 @@
 .posts-list__image {
   text-decoration: none;
 }
+
+@media (min-width: 660px) {
+  .posts-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .posts-list__item {
+    min-width: 300px;
+
+    &--best {
+      min-width: 620px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .posts-list__item {
+    &--best {
+      min-width: 940px;
+    }
+  }
+}
