@@ -36,26 +36,24 @@
 
     background: url("../img/htmlacademy.svg") no-repeat;
   }
-}
 
-@media (min-width: 660px) {
-  .page-footer__container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 85px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .page-footer__container {
-    margin-top: 70px;
-  }
-
-  .page-footer__powered-by {
+  @media (min-width: 1200px) {
     font-size: 18px;
 
     &::after {
       left: 115px;
     }
+  }
+}
+
+.page-footer__container {
+  @media (min-width: 660px) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 70px;
   }
 }

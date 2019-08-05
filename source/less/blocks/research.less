@@ -1,34 +1,41 @@
 .research {
   display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+  }
+
+  @media (min-width: 1200px) {
+    background: #f2f2f2;
+  }
 }
 
-@media (min-width: 660px) {
-  .research {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding-top: 60px;
-  }
-
-  .research__item {
+.research__item {
+  @media (min-width: 660px) {
     width: 295px;
   }
+}
 
-  .research__slogan {
+.research__slogan {
+  @media (min-width: 660px) {
     margin: 0;
 
     font-size: 30px;
     line-height: 36px;
     color: #000000;
   }
+}
 
-  .research__description {
+.research__description {
+  @media (min-width: 660px) {
     font-size: 14px;
     line-height: 24px;
     color: #283645;
   }
+}
 
-  .research__link {
+.research__link {
+  @media (min-width: 660px) {
     font-size: 14px;
     line-height: 24px;
     color: #d22856;
@@ -36,8 +43,10 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .research {
-    background: #f2f2f2;
-  }
+.research__container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 890px;
+  margin: 0 auto;
+  padding-top: 60px;
 }

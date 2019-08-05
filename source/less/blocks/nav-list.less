@@ -13,6 +13,10 @@
   &--closed {
     display: none;
   }
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .nav-list__link {
@@ -25,19 +29,15 @@
 
   background: #283645;
   box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-}
 
-@media (min-width: 1200px) {
-  .nav-list {
-    display: flex;
-  }
-
-  .nav-list__link {
+  @media (min-width: 1200px) {
     background: transparent;
     box-shadow: none;
   }
+}
 
-  .nav-list__item {
+.nav-list__item {
+  @media (min-width: 1200px) {
     margin-right: 80px;
   }
 }

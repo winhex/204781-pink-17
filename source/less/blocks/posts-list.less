@@ -5,6 +5,11 @@
   flex-direction: column;
 
   text-align: left;
+
+  @media (min-width: 660px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .posts-list__item {
@@ -15,6 +20,20 @@
   margin-left: 20px;
 
   background: #fefefe;
+
+  @media (min-width: 660px) {
+    min-width: 300px;
+
+    &--best {
+      min-width: 620px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &--best {
+      min-width: 940px;
+    }
+  }
 }
 
 .posts-list__review {
@@ -60,27 +79,4 @@
 
 .posts-list__image {
   text-decoration: none;
-}
-
-@media (min-width: 660px) {
-  .posts-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .posts-list__item {
-    min-width: 300px;
-
-    &--best {
-      min-width: 620px;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .posts-list__item {
-    &--best {
-      min-width: 940px;
-    }
-  }
 }

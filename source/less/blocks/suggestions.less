@@ -4,12 +4,29 @@
   font-weight: 300;
   color: #283645;
   text-align: center;
+
+  @media (min-width: 660px) {
+    width: 585px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 40px;
+    line-height: 44px;
+  }
 }
 
 .suggestions__list {
   .no-list;
 
   background: #f2f2f2;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
 }
 
 .suggestions__item {
@@ -36,25 +53,4 @@
   line-height: 24px;
   color: #283645;
   text-align: center;
-}
-
-@media (min-width: 660px) {
-  .suggestions__slogan {
-    width: 585px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-
-    font-size: 40px;
-    line-height: 44px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .suggestions__list {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 165px;
-    padding-right: 165px;
-  }
 }

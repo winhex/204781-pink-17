@@ -6,6 +6,12 @@
   text-align: center;
 
   background: #283645;
+
+  @media (min-width: 660px) {
+    padding: 0;
+
+    background: transparent;
+  }
 }
 
 .app__button {
@@ -27,6 +33,10 @@
   border: solid 3px #ffffff;
   border-radius: 30px;
   background: #283645;
+
+  @media (min-width: 660px) {
+    background: transparent;
+  }
 }
 
 .app__platforms {
@@ -39,30 +49,17 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .app__slogan {
   display: none;
-}
 
-@media (min-width: 660px) {
-  .app {
-    padding: 0;
-
-    background: transparent;
-  }
-
-  .app__container {
-    width: 300px;
-    margin-top: -500px;
-    margin-right: auto;
-  }
-
-  .app__button {
-    background: transparent;
-  }
-
-  .app__slogan {
+  @media (min-width: 660px) {
     display: block;
     width: 186px;
     height: 126px;
@@ -75,9 +72,13 @@
     text-align: center;
     color: #ffffff;
   }
+}
 
-  .app__platforms {
-    font-size: 18px;
-    line-height: 24px;
+.app__container {
+  @media (min-width: 660px) {
+    width: 300px;
+    margin-top: -500px;
+    margin-right: auto;
+    margin-left: 10%;
   }
 }

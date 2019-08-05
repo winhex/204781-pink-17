@@ -22,14 +22,17 @@
   display: inline-block;
   margin: 20px;
   vertical-align: middle;
+
+  @media (min-width: 1200px) {
+    margin-right: 173px;
+  }
 }
 
-@media (min-width: 1200px) {
-  .page-header__container {
-    display: flex;
-  }
+.page-header__container {
+  max-width: 1200px;
 
-  .page-header__logo {
-    margin-right: 173px;
+  @media (min-width: 1200px) {
+    display: flex;
+    margin: 0 auto;
   }
 }
