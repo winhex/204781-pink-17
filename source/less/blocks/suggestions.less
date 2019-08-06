@@ -4,12 +4,29 @@
   font-weight: 300;
   color: #283645;
   text-align: center;
+
+  @media (min-width: 660px) {
+    width: 585px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 40px;
+    line-height: 44px;
+  }
 }
 
 .suggestions__list {
   .no-list;
 
   background: #f2f2f2;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
 }
 
 .suggestions__item {
@@ -26,15 +43,14 @@
 
 .suggestions__description {
   display: block;
+  width: 259px;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
 
-  width: 259px;
-
   font-size: 14px;
   line-height: 24px;
-  text-align: center;
   color: #283645;
+  text-align: center;
 }

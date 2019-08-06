@@ -13,12 +13,26 @@
 
   // &--open {
   //   position: relative;
+
   //   background: #283645;
   // }
 }
 
 .page-header__logo {
   display: inline-block;
-  vertical-align: middle;
   margin: 20px;
+  vertical-align: middle;
+
+  @media (min-width: 1200px) {
+    margin-right: 173px;
+  }
+}
+
+.page-header__container {
+  max-width: 1200px;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    margin: 0 auto;
+  }
 }

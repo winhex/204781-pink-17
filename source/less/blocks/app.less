@@ -2,25 +2,26 @@
   padding-top: 28px;
   padding-bottom: 20px;
 
-  background: #283645;
   color: #ffffff;
   text-align: center;
+
+  background: #283645;
+
+  @media (min-width: 660px) {
+    padding: 0;
+
+    background: transparent;
+  }
 }
 
 .app__button {
   display: block;
 
+  width: 281px;
   margin-left: auto;
   margin-right: auto;
-
-  width: 281px;
-
   padding-top: 20px;
   padding-bottom: 20px;
-
-  border: solid 3px #ffffff;
-  border-radius: 30px;
-  background: #283645;
 
   font-size: 18px;
   line-height: 18px;
@@ -28,6 +29,14 @@
   color: #ffffff;
   text-decoration: none;
   white-space: nowrap;
+
+  border: solid 3px #ffffff;
+  border-radius: 30px;
+  background: #283645;
+
+  @media (min-width: 660px) {
+    background: transparent;
+  }
 }
 
 .app__platforms {
@@ -40,4 +49,36 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.app__slogan {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+    width: 186px;
+    height: 126px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 300;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.app__container {
+  @media (min-width: 660px) {
+    width: 300px;
+    margin-top: -500px;
+    margin-right: auto;
+    margin-left: 10%;
+  }
 }

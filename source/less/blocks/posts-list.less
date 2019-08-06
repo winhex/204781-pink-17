@@ -5,18 +5,35 @@
   flex-direction: column;
 
   text-align: left;
+
+  @media (min-width: 660px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .posts-list__item {
   display: flex;
   flex-direction: column;
-
-  margin-left: 20px;
-  margin-bottom: 20px;
-
   max-width: 280px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 
   background: #fefefe;
+
+  @media (min-width: 660px) {
+    min-width: 300px;
+
+    &--best {
+      min-width: 620px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &--best {
+      min-width: 940px;
+    }
+  }
 }
 
 .posts-list__review {
@@ -48,6 +65,7 @@
 
   &::before {
     content: "";
+
     position: absolute;
     top: 5px;
     left: -30px;
