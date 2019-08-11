@@ -1,6 +1,10 @@
 .intro {
   background: #283645 url("../img/bg-back-mobile@1x.jpg") center top no-repeat;
-  background-size: cover;
+  background-size: auto;
+
+  &--opened {
+    margin-top: 189px;
+  }
 
   @media (min-width: 660px) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -24,7 +28,7 @@
 
     display: block;
     width: 320px;
-    height: 396px;
+    height: 462px;
     margin: 0;
     margin-left: auto;
     margin-right: auto;

@@ -5,9 +5,31 @@
     <title>Pink</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width">
+    <style>
+    html {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url( "img/pg/pink-photo-mobile.png" );
+    }
+    /* Планшет */
+    @media ( min-width: 660px ) {
+      html {
+        /* Планшетный макет */
+        background-image: url( "img/pg/pink-photo-tablet.png" );
+      }
+    }
+    /* Десктоп */
+    @media ( min-width: 1200px ) {
+      html {
+        /* Десктопный макет */
+        background-image: url( "img/pg/pink-photo-desktop.png" );
+      }
+    }
+    </style>
   </head>
   <body>
-    <header class="page-header page-header--open">
+    <header class="page-header page-header--closed">
       <div class="page-header__container container">
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
@@ -144,5 +166,6 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__powered-by">Разработано</a>
       </div>
     </footer>
+  <script src="js/scripts.js"></script>
   </body>
 </html>
