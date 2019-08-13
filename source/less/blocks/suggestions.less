@@ -1,5 +1,18 @@
 .suggestions {
   margin-top: 38px;
+
+  &::after {
+    content: "";
+
+    position: relative;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 277px;
+
+    background: #f2f2f2 url("../img/iphone-screen-mobile@1x.png") center top no-repeat;
+  }
 }
 
 .suggestions__slogan {
@@ -27,6 +40,7 @@
 
   margin-top: 35px;
   padding-top: 80px;
+  padding-bottom: 10px;
   background: #f2f2f2;
 
   &::before {
