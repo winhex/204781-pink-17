@@ -1,6 +1,10 @@
 .suggestions {
   margin-top: 38px;
 
+  @media (min-width: 660px) {
+    margin-top: 162px;
+  }
+
   &::after {
     content: "";
 
@@ -12,6 +16,10 @@
     height: 277px;
 
     background: #f2f2f2 url("../img/iphone-screen-mobile@1x.png") center top no-repeat;
+
+    @media (min-width: 660px) {
+      display: none;
+    }
   }
 }
 
@@ -23,13 +31,21 @@
   text-align: center;
 
   @media (min-width: 660px) {
-    width: 585px;
-    margin-top: 50px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 5px;
 
     font-size: 40px;
     line-height: 44px;
+  }
+
+  &--cosmetic {
+    @media (min-width: 660px) {
+      width: 350px;
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -43,6 +59,17 @@
   padding-bottom: 10px;
   background: #f2f2f2;
 
+  @media (min-width: 660px) {
+    padding-top: 75px;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
   &::before {
     content: "";
 
@@ -55,18 +82,37 @@
 
     background: url("../img/bg-triangle-white.svg") no-repeat center top;
     background-size: 100% 25px;
+
+    @media (min-width: 660px) {
+      background-size: 100% 52px;
+    }
   }
 
-  @media (min-width: 1200px) {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 165px;
-    padding-right: 165px;
+  &::after {
+    @media (min-width: 660px) {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      z-index: 20;
+
+      display: block;
+      width: 268px;
+      height: 481px;
+
+      background: transparent url("../img/iphone-screen-3-tablet@1x.png") center top no-repeat;
+    }
   }
 }
 
 .suggestions__item {
   margin-bottom: 29px;
+
+  @media (min-width: 660px) {
+    margin-bottom: 33px;
+    padding-left: 50%;
+  }
 }
 
 .suggestions__title {
@@ -78,6 +124,10 @@
   font-weight: bold;
   color: #000000;
   text-align: center;
+
+  @media (min-width: 660px) {
+    text-align: left;
+  }
 }
 
 .suggestions__description {
@@ -92,4 +142,10 @@
   line-height: 24px;
   color: #283645;
   text-align: center;
+
+  @media (min-width: 660px) {
+    width: 310px;
+    margin-left: 0;
+    text-align: left;
+  }
 }

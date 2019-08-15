@@ -1,4 +1,7 @@
 .app {
+  position: relative;
+  z-index: 10;
+
   padding-top: 28px;
   padding-bottom: 20px;
 
@@ -8,6 +11,7 @@
   background: #283645;
 
   @media (min-width: 660px) {
+    margin-top: 160px;
     padding: 0;
 
     background: transparent;
@@ -34,6 +38,9 @@
   background: #283645;
 
   @media (min-width: 660px) {
+    width: 100%;
+    margin-bottom: 47px;
+
     background: transparent;
   }
 }
@@ -51,6 +58,9 @@
   font-weight: 300;
 
   @media (min-width: 660px) {
+    width: 295px;
+    margin-top: 25px;
+
     font-size: 18px;
     line-height: 24px;
   }
@@ -65,9 +75,10 @@
     height: 126px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 47px;
 
     font-size: 40px;
-    line-height: 42px;
+    line-height: 48px;
     font-weight: 300;
     text-align: center;
     color: #ffffff;
@@ -77,8 +88,8 @@
 .app__container {
   @media (min-width: 660px) {
     width: 300px;
-    margin-top: -500px;
-    margin-right: auto;
-    margin-left: 10%;
+    margin-top: -685px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
