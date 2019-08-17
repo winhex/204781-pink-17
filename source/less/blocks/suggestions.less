@@ -41,12 +41,25 @@
     line-height: 44px;
   }
 
+  @media (min-width: 960px) {
+    width: 750px;
+    margin-bottom: 0;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
   &--cosmetic {
     margin-bottom: 35px;
 
     @media (min-width: 660px) {
       width: 350px;
       margin-bottom: 50px;
+    }
+
+    @media (min-width: 960px) {
+      width: 500px;
+      margin-bottom: 180px;
     }
   }
 }
@@ -55,15 +68,14 @@
   .no-list;
 
   position: relative;
+  z-index: 30;
 
   padding-bottom: 13px;
   background: #f2f2f2;
 
   @media (min-width: 960px) {
     display: flex;
-    justify-content: space-around;
-    padding-left: 165px;
-    padding-right: 165px;
+    justify-content: center;
   }
 
   &::after {
@@ -81,6 +93,10 @@
 
       background: transparent url("../img/iphone-screen-3-tablet@1x.png") center top no-repeat;
     }
+
+    @media (min-width: 960px) {
+      display: none;
+    }
   }
 }
 
@@ -89,6 +105,55 @@
 
   @media (min-width: 660px) {
     padding-left: 50%;
+  }
+
+  @media (min-width: 960px) {
+    position: relative;
+    padding-top: 175px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &--mood::before {
+      content: "";
+
+      position: absolute;
+      top: -185px;
+      left: 0px;
+
+      width: 320px;
+      height: 302px;
+
+      background: url("../img/iphone-screen-1-desktop@1x.png") center top no-repeat;
+      background-size: 292px auto;
+    }
+
+    &--world::before {
+      content: "";
+
+      position: absolute;
+      top: -185px;
+      left: 4px;
+
+      width: 320px;
+      height: 302px;
+
+      background: url("../img/iphone-screen-2-desktop@1x.png") center top no-repeat;
+      background-size: 292px auto;
+    }
+
+    &--friends::before {
+      content: "";
+
+      position: absolute;
+      top: -185px;
+      left: 4px;
+
+      width: 320px;
+      height: 302px;
+
+      background: url("../img/iphone-screen-3-desktop@1x.png") center top no-repeat;
+      background-size: 292px auto;
+    }
   }
 }
 
@@ -104,6 +169,15 @@
 
   @media (min-width: 660px) {
     text-align: left;
+  }
+
+  @media (min-width: 960px) {
+    width: 240px;
+    margin-bottom: 24px;
+
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
   }
 }
 
@@ -125,6 +199,14 @@
     margin-left: 0;
     text-align: left;
   }
+
+  @media (min-width: 960px) {
+    width: 240px;
+
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .suggestions__wrapper {
@@ -145,8 +227,17 @@
     background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat center top;
     background-size: 100%;
 
-    @media (min-width: 660px) {
+    @media (min-width: 960px) {
+      top: -100px;
       background-size: 100%;
     }
+  }
+}
+
+.suggestions__container {
+  @media (min-width: 960px) {
+    max-width: none;
+    margin: 0 auto;
+    padding-top: 27px;
   }
 }
