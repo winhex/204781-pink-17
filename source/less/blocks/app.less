@@ -1,4 +1,7 @@
 .app {
+  position: relative;
+  z-index: 10;
+
   padding-top: 28px;
   padding-bottom: 20px;
 
@@ -8,9 +11,15 @@
   background: #283645;
 
   @media (min-width: 660px) {
+    margin-top: 160px;
     padding: 0;
 
     background: transparent;
+  }
+
+  @media (min-width: 960px) {
+    width: 960px;
+    margin: 0 auto;
   }
 }
 
@@ -20,8 +29,7 @@
   width: 281px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 15px 30px 16px;
 
   font-size: 18px;
   line-height: 18px;
@@ -35,7 +43,17 @@
   background: #283645;
 
   @media (min-width: 660px) {
+    width: 100%;
+    margin-bottom: 47px;
+
     background: transparent;
+  }
+
+  @media (min-width: 960px) {
+    margin-bottom: 65px;
+
+    font-size: 21px;
+    line-height: 21px;
   }
 }
 
@@ -45,14 +63,22 @@
   width: 230px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5px;
 
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
 
   @media (min-width: 660px) {
+    width: 295px;
+    margin-top: 25px;
+
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 45px;
   }
 }
 
@@ -65,20 +91,34 @@
     height: 126px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 47px;
 
     font-size: 40px;
-    line-height: 42px;
+    line-height: 48px;
     font-weight: 300;
     text-align: center;
     color: #ffffff;
+  }
+
+  @media (min-width: 960px) {
+    width: 235px;
+    margin-bottom: 105px;
+
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
 .app__container {
   @media (min-width: 660px) {
     width: 300px;
-    margin-top: -500px;
-    margin-right: auto;
-    margin-left: 10%;
+    margin-top: -685px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: -685px;
+    padding-left: 10px;
   }
 }

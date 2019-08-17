@@ -3,9 +3,12 @@
 
   @media (min-width: 660px) {
     display: block;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
+    padding: 0;
     background: #f2f2f2;
   }
 }
@@ -14,11 +17,17 @@
   @media (min-width: 660px) {
     width: 295px;
   }
+
+  @media (min-width: 960px) {
+    width: 535px;
+    padding-top: 55px;
+  }
 }
 
 .research__slogan {
   @media (min-width: 660px) {
     margin: 0;
+    margin-top: 37px;
 
     font-size: 30px;
     line-height: 36px;
@@ -28,9 +37,22 @@
 
 .research__description {
   @media (min-width: 660px) {
+    width: 300px;
+    margin-top: 11px;
+    margin-bottom: 8px;
+
     font-size: 14px;
     line-height: 24px;
     color: #283645;
+  }
+
+  @media (min-width: 960px) {
+    width: 535px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -41,12 +63,31 @@
     color: #d22856;
     text-decoration-color: #d22856;
   }
+
+  @media (min-width: 960px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .research__container {
   display: flex;
-  justify-content: space-around;
-  max-width: 890px;
+  max-width: 620px;
   margin: 0 auto;
   padding-top: 60px;
+
+  @media (min-width: 960px) {
+    max-width: 940px;
+    padding-top: 20px;
+  }
+}
+
+.research__icon {
+  margin-right: 71px;
+
+  @media (min-width: 960px) {
+    width: 298px;
+    height: 345px;
+    margin-right: 69px;
+  }
 }

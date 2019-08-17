@@ -1,8 +1,7 @@
 .nav-list {
   .no-list;
 
-  display: block;
-  margin-top: 4px;
+  margin-top: 3px;
 
   font-size: 18px;
   line-height: 32px;
@@ -14,8 +13,26 @@
     display: none;
   }
 
-  @media (min-width: 1200px) {
+  &--opened {
+    display: block;
+  }
+
+  @media (min-width: 660px) {
+    width: 100vw;
+    margin-top: 0;
+    margin-bottom: -45px;
+  }
+
+  @media (min-width: 960px) {
     display: flex;
+    width: 760px;
+    padding-top: 45px;
+    padding-left: 150px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: none;
   }
 }
 
@@ -28,16 +45,35 @@
   text-decoration: none;
 
   background: #283645;
-  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 #000000;
 
-  @media (min-width: 1200px) {
-    background: transparent;
+  @media (min-width: 960px) {
+    padding: 0;
+
+    background: none;
     box-shadow: none;
   }
 }
 
 .nav-list__item {
-  @media (min-width: 1200px) {
+  position: relative;
+
+  @media (min-width: 960px) {
     margin-right: 80px;
+  }
+
+  &--active::after {
+    @media (min-width: 960px) {
+      content: "";
+
+      position: absolute;
+      right: 0;
+      bottom: -12px;
+      left: 0;
+
+      height: 2px;
+
+      background: #ffffff;
+    }
   }
 }

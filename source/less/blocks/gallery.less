@@ -6,11 +6,37 @@
 
 .gallery__slogan {
   width: 250px;
-  margin-top: 56px;
-  margin-bottom: 56px;
+
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 43px;
+  padding-bottom: 50px;
 
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: 660px) {
+    width: 450px;
+    padding-top: 92px;
+    padding-bottom: 75px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: 960px) {
+    width: 575px;
+    padding-bottom: 85px;
+  }
+}
+
+.gallery__container {
+  position: relative;
+
+  background-color: #ffffff;
+
+  @media (min-width: 960px) {
+    margin: 0 auto;
+  }
 }

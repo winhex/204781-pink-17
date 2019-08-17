@@ -5,18 +5,40 @@
     <title>Pink</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width">
+    <!-- <style>
+    html {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url( "img/pg/pink-form-mobile.png" );
+    }
+    /* Планшет */
+    @media ( min-width: 660px ) {
+      html {
+        /* Планшетный макет */
+        background-image: url( "img/pg/pink-form-tablet.png" );
+      }
+    }
+    /* Десктоп */
+    @media ( min-width: 960px ) {
+      html {
+        /* Десктопный макет */
+        background-image: url( "img/pg/pink-form-desktop.png" );
+      }
+    }
+    </style> -->
   </head>
   <body>
-    <header class="page-header page-header--open">
+    <header class="page-header page-header--opened">
       <div class="page-header__container container">
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
         </a>
         <nav class="page-header__main-nav main-nav">
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle main-nav__toggle--opened" type="button">
             <span class="visually-hidden">Открытие/Закрытие меню</span>
           </button>
-          <ul class="main-nav__list nav-list nav-list--closed">
+          <ul class="main-nav__list nav-list nav-list--opened">
             <li class="nav-list__item">
               <a class="nav-list__link" href="index.html">Главная</a>
             </li>
@@ -35,12 +57,12 @@
     </header>
     <main class="page-main">
       <div class="intro">
-        <div class="intro__inner intro__inner--index"></div>
+        <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <div class="intro__inner intro-inner--page"></div>
       </div>
-      <h1 class="page-main__title visually-hidden">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__container container">
+      <div class="page-footer__container">
         <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Pink">
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
@@ -62,5 +84,6 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__powered-by">Разработано</a>
       </div>
     </footer>
+  <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -1,14 +1,10 @@
 .main-nav {
   text-align: center;
-
-  &--closed {
-    display: none;
-  }
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 20px;
+  top: 21px;
   right: 20px;
 
   width: 50px;
@@ -19,7 +15,17 @@
   background: url("../img/icon-menu-burger.svg") center center no-repeat;
   border: none;
 
-  @media (min-width: 1200px) {
+  &--opened {
+    right: 5px;
+
+    background: url("../img/icon-menu-cross.svg") center center no-repeat;
+  }
+
+  @media (min-width: 660px) {
+    top: 44px;
+  }
+
+  @media (min-width: 960px) {
     display: none;
   }
 }

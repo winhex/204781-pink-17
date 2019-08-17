@@ -1,12 +1,18 @@
 .page-footer {
-  width: 100%;
+  // width: 100%;
 }
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 43px;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 40px;
+
+  @media (min-width: 660px) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .page-footer__powered-by {
@@ -14,7 +20,6 @@
 
   display: block;
   max-width: 128px;
-  margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
 
@@ -24,20 +29,27 @@
   text-decoration: none;
   text-align: left;
 
+  @media (min-width: 660px) {
+    margin: 0;
+    margin-right: 40px;
+    margin-top: 14px;
+    padding: 0;
+  }
+
   &::after {
     content: "";
 
     position: absolute;
-    top: -2px;
-    left: 101px;
+    top: -9px;
+    left: 96px;
 
-    width: 27px;
-    height: 34px;
+    width: 41px;
+    height: 48px;
 
     background: url("../img/htmlacademy.svg") no-repeat;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     font-size: 18px;
 
     &::after {
@@ -50,10 +62,17 @@
   @media (min-width: 660px) {
     display: flex;
     justify-content: space-between;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 85px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 36px;
+    padding-bottom: 34px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     margin-top: 70px;
   }
 }

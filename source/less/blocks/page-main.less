@@ -10,11 +10,32 @@
 }
 
 .page-main__title {
-  width: 230px;
+  width: 280px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 96px;
 
   font-size: 24px;
-  line-height: 32px;
+  line-height: 30px;
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: 660px) {
+    width: 480px;
+    padding-top: 180px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  @media (min-width: 960px) {
+    width: 750px;
+    padding-top: 175px;
+
+    &--photo {
+      width: 350px;
+    }
+  }
 }
