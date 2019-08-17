@@ -44,11 +44,7 @@
   text-decoration: none;
 
   background: #283645;
-  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-
-  &:last-child {
-    box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 #000000;
-  }
+  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 #000000;
 
   @media (min-width: 960px) {
     padding: 0;
@@ -59,7 +55,24 @@
 }
 
 .nav-list__item {
+  position: relative;
+
   @media (min-width: 960px) {
     margin-right: 80px;
+  }
+
+  &--active::after {
+    @media (min-width: 960px) {
+      content: "";
+
+      position: absolute;
+      right: 0;
+      bottom: -12px;
+      left: 0;
+
+      height: 2px;
+
+      background: #ffffff;
+    }
   }
 }

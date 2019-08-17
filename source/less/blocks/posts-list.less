@@ -10,6 +10,10 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @media (min-width: 960px) {
+    justify-content: space-between;
+  }
 }
 
 .posts-list__item {
@@ -30,14 +34,14 @@
   }
 
   &:nth-child(even) {
-    @media (min-width: 660px) {
+    @media (min-width: 660px) and (max-width: 959px) {
       margin-right: 20px;
       margin-left: auto;
     }
   }
 
   &:nth-child(odd) {
-    @media (min-width: 660px) {
+    @media (min-width: 660px) and (max-width: 959px) {
       margin-left: 0;
       margin-right: auto;
     }
@@ -60,8 +64,12 @@
   }
 
   @media (min-width: 960px) {
+    margin: 0;
+    margin-bottom: 54px;
+
     &--best {
       min-width: 940px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -145,16 +153,18 @@
   }
 }
 
-.posts-list__image {
-  text-decoration: none;
-}
-
 .posts-list__photo {
+  position: relative;
   margin-bottom: 10px;
 
   @media (min-width: 660px) {
     width: 300px;
     height: 300px;
+  }
+
+  @media (min-width: 960px) {
+    width: 300px;
+    height: 400px;
   }
 
   &--panorama {
@@ -163,12 +173,45 @@
       min-width: 660px;
       height: 509px;
     }
+
+    @media (min-width: 960px) {
+      min-width: 100vw;
+      height: 509px;
+      transform: translateX(-50%);
+      margin-left: 50%;
+    }
   }
 }
 
 .posts-list__link {
   &--panorama {
     position: relative;
+
+    &::before {
+      content: "Панорама дня";
+      z-index: 50;
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      display: inline-block;
+      vertical-align: top;
+
+      padding: 6px 20px;
+
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #d22856;
+      text-transform: uppercase;
+
+      @media (min-width: 660px) {
+        top: 57px;
+
+        transform: translateX(330px);
+      }
+    }
   }
 }
 
@@ -187,12 +230,23 @@
     margin-bottom: 30px;
     padding-bottom: 10px;
   }
+
+  @media (min-width: 960px) {
+    box-sizing: border-box;
+    width: 940px;
+    max-height: 98px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    padding-bottom: 10px;
+  }
 }
 
 .posts-list__wrapper .posts-list__review {
-  flex-direction: row;
-  justify-content: start;
-  height: auto;
+  @media (min-width: 660px) {
+    flex-direction: row;
+    justify-content: start;
+    height: auto;
+  }
 }
 
 .posts-list__wrapper .posts-list__likes {
@@ -206,6 +260,10 @@
       left: 105px;
     }
   }
+
+  @media (min-width: 960px) {
+    margin-left: 623px;
+  }
 }
 
 .posts-list__wrapper .posts-list__text {
@@ -213,5 +271,9 @@
     order: 3;
 
     width: 520px;
+  }
+
+  @media (min-width: 960px) {
+    width: 880px;
   }
 }
