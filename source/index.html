@@ -5,7 +5,7 @@
     <title>Pink</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width">
-    <!-- <style>
+    <style>
     html {
       background-repeat: no-repeat;
       background-position:  50% 0;
@@ -26,7 +26,7 @@
         background-image: url( "img/pg/pink-index-desktop.png" );
       }
     }
-    </style> -->
+    </style>
   </head>
   <body>
     <header class="page-header page-header--opened">
@@ -40,7 +40,7 @@
         </a>
         <nav class="page-header__main-nav main-nav">
           <button class="main-nav__toggle main-nav__toggle--opened" type="button">
-            <span class="visually-hidden">Открытие/Закрытие меню</span>
+            <span class="main-nav__toggle-text">Открытие/Закрытие меню</span>
           </button>
           <ul class="main-nav__list nav-list nav-list--opened">
             <li class="nav-list__item nav-list__item--active">
@@ -62,7 +62,7 @@
     <main class="page-main">
       <header class="intro intro--closed">
         <div class="intro__container intro__container--index">
-          <h1 class="intro-title visually-hidden">Приложение "Pink"</h1>
+          <h1 class="intro-title">Приложение "Pink"</h1>
           <section class="app">
             <div class="app__container">
               <h2 class="app__slogan">Взгляните на жизнь иначе!</h2>
@@ -84,33 +84,39 @@
         </div>
       </header>
       <section class="suggestions">
-        <div class="suggestions__container container">
+        <div class="suggestions__slogan-container">
           <p class="suggestions__slogan">Устали от серости мегаполиса?</p>
           <p class="suggestions__slogan suggestions__slogan--cosmetic">Нам есть, что вам предложить!</p>
-          <div class="suggestions__wrapper">
-          <ul class="suggestions__list">
-            <li class="suggestions__item suggestions__item--mood">
-              <h2 class="suggestions__title">Поднимает настроение</h2>
-              <p class="suggestions__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="suggestions__item suggestions__item--world">
-              <h2 class="suggestions__title">Меняет мир вокруг</h2>
-              <p class="suggestions__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
-            </li>
-            <li class="suggestions__item suggestions__item--friends">
-              <h2 class="suggestions__title">Заводит новых друзей</h2>
-              <p class="suggestions__description">Cтавьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
+        </div>
+        <div class="suggestions__wrapper">
+          <div class="suggestions__container">
+            <ul class="suggestions__list">
+              <li class="suggestions__item suggestions__item--mood">
+                <h3 class="suggestions__title">Поднимает настроение</h3>
+                <p class="suggestions__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="suggestions__item suggestions__item--world">
+                <h3 class="suggestions__title">Меняет мир вокруг</h3>
+                <p class="suggestions__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+              </li>
+              <li class="suggestions__item suggestions__item--friends">
+                <h3 class="suggestions__title">Заводит новых друзей</h3>
+                <p class="suggestions__description">Cтавьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
           </div>
-          <div class="suggestions__another research">
-            <div class="research__container container">
-              <img class="research__icon" src="img/icon-timer.svg" width="238" height="276" alt="Таймер">
-              <div class="research__item">
-                <h3 class="research__slogan">Эффект на&nbsp;24&nbsp;часа!</h3>
-                <p class="research__description">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
-                <a class="research__link" href="#">Узнать больше об исследовании</a>
-              </div>
+        </div>
+        <div class="suggestions__another research">
+          <div class="research__container">
+            <div class="research__timer">
+              <svg class="research__timer-icon" width="238" height="276" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+              <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+              </svg>
+            </div>
+            <div class="research__item">
+              <h3 class="research__slogan">Эффект на&nbsp;24&nbsp;часа!</h3>
+              <p class="research__description">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+              <a class="research__link" href="#">Узнать больше об исследовании</a>
             </div>
           </div>
         </div>

@@ -48,6 +48,21 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  &--index {
+    width: auto;
+    padding: 0;
+
+    @media (min-width: 660px) {
+      min-height: 619px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media (min-width: 960px) {
+      min-height: 743px;
+    }
+  }
+
   &::before {
     content: "";
 
@@ -112,24 +127,11 @@
       }
     }
   }
-
-  &--index {
-    width: auto;
-    padding: 0;
-
-    @media (min-width: 660px) {
-      min-height: 619px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    @media (min-width: 960px) {
-      min-height: 743px;
-    }
-  }
 }
 
 .intro-title {
+  .visually-hidden;
+
   margin: 0;
 
   font-size: 24px;
