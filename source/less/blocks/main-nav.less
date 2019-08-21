@@ -1,24 +1,30 @@
 .main-nav {
-  text-align: center;
+  @media (min-width: 960px) {
+    width: 760px;
+    margin-left: auto;
+    padding-top: 34px;
+    padding-bottom: 36px;
+    flex-shrink: 1;
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
   top: 21px;
-  right: 20px;
+  right: 19px;
 
   width: 50px;
   height: 24px;
   margin: 0;
   padding: 0;
 
-  background: url("../img/icon-menu-burger.svg") center center no-repeat;
+  background: transparent url("../img/icon-menu-burger.svg") center center no-repeat;
   border: none;
 
   &--opened {
     right: 5px;
 
-    background: url("../img/icon-menu-cross.svg") center center no-repeat;
+    background-image: url("../img/icon-menu-cross.svg");
   }
 
   @media (min-width: 660px) {

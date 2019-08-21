@@ -1,56 +1,66 @@
 .app {
-  position: relative;
-  z-index: 10;
-
   padding-top: 28px;
-  padding-bottom: 20px;
+  padding-bottom: 29px;
 
-  color: #ffffff;
   text-align: center;
 
-  background: #283645;
+  background-color: #283645;
 
   @media (min-width: 660px) {
-    margin-top: 160px;
-    padding: 0;
+    position: relative;
+    z-index: 2;
 
-    background: transparent;
+    width: 300px;
+    padding: 93px 0;
+
+    background-color: transparent;
   }
 
   @media (min-width: 960px) {
-    width: 960px;
-    margin: 0 auto;
+    padding: 109px 0;
+  }
+}
+
+.app__container {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 660px) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .app__button {
-  display: block;
+  display: inline-block;
 
-  width: 281px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin-bottom: 32px;
   padding: 15px 30px 16px;
+  vertical-align: top;
 
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
   color: #ffffff;
+  text-align: center;
   text-decoration: none;
   white-space: nowrap;
 
   border: solid 3px #ffffff;
   border-radius: 30px;
-  background: #283645;
+  background-color: transparent;
 
   @media (min-width: 660px) {
-    width: 100%;
-    margin-bottom: 47px;
-
-    background: transparent;
+    margin-bottom: 46px;
   }
 
   @media (min-width: 960px) {
-    margin-bottom: 65px;
+    margin-bottom: 67px;
+    padding: 14px 20px;
 
     font-size: 21px;
     line-height: 21px;
@@ -63,62 +73,63 @@
   width: 230px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5px;
+  margin-top: 22px;
+  margin-bottom: 0;
 
-  font-size: 14px;
-  line-height: 24px;
   font-weight: 300;
 
   @media (min-width: 660px) {
-    width: 295px;
-    margin-top: 25px;
+    width: 300px;
+    margin-top: 38px;
 
     font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: 960px) {
-    margin-top: 45px;
+    margin-top: 55px;
   }
 }
 
 .app__slogan {
-  display: none;
+  @media (max-width: 659px) {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    clip-path: inset(100%);
+  }
 
   @media (min-width: 660px) {
-    display: block;
-    width: 186px;
-    height: 126px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 47px;
+    width: 190px;
+    margin-top: 0;
+    margin-bottom: 28px;
+    padding-left: 55px;
+    padding-right: 55px;
 
     font-size: 40px;
     line-height: 48px;
     font-weight: 300;
-    text-align: center;
     color: #ffffff;
   }
 
   @media (min-width: 960px) {
-    width: 235px;
-    margin-bottom: 105px;
+    width: 240px;
+    margin-bottom: 51px;
+    padding-left: 30px;
+    padding-right: 30px;
 
     font-size: 50px;
     line-height: 60px;
-  }
-}
-
-.app__container {
-  @media (min-width: 660px) {
-    width: 300px;
-    margin-top: -685px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media (min-width: 960px) {
-    margin-top: -685px;
-    padding-left: 10px;
   }
 }

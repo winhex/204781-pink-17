@@ -30,7 +30,7 @@
   </head>
   <body>
     <header class="page-header page-header--opened">
-      <div class="page-header__container container">
+      <div class="page-header__container">
         <a class="page-header__logo">
           <picture>
             <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
@@ -60,28 +60,29 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="intro intro--closed">
-        <div class="intro__inner intro__inner--index"></div>
-      </div>
-      <h1 class="visually-hidden">Приложение "Pink"</h1>
-      <section class="app">
-        <div class="app__container container">
-          <p class="app__slogan">Взгляните на жизнь иначе!</p>
-          <button class="app__button">Скачать приложение</button>
-          <ul class="app__stores-list stores-list">
-            <li class="stores-list__item">
-              <a href="#"><img src="img/logo-apple.svg" width="47" height="56" alt="Apple Store"></a>
-            </li>
-            <li class="stores-list__item">
-              <a href="#"><img src="img/logo-android.svg" width="43" height="47" alt="Android Store"></a>
-            </li>
-            <li class="stores-list__item">
-              <a href="#"><img src="img/logo-microsoft.svg" width="44" height="41" alt="Windows Store"></a>
-            </li>
-          </ul>
-          <p class="app__platforms">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <header class="intro intro--closed">
+        <div class="intro__container intro__container--index">
+          <h1 class="intro-title visually-hidden">Приложение "Pink"</h1>
+          <section class="app">
+            <div class="app__container">
+              <h2 class="app__slogan">Взгляните на жизнь иначе!</h2>
+              <button class="app__button">Скачать приложение</button>
+              <ul class="app__stores-list stores-list">
+                <li class="stores-list__item">
+                  <a class="stores-list__link" href="#"><img class="stores-list__image" src="img/logo-apple.svg" width="47" height="56" alt="Apple Store"></a>
+                </li>
+                <li class="stores-list__item">
+                  <a class="stores-list__link" href="#"><img class="stores-list__image" src="img/logo-android.svg" width="43" height="47" alt="Android Store"></a>
+                </li>
+                <li class="stores-list__item">
+                  <a class="stores-list__link" href="#"><img class="stores-list__image" src="img/logo-microsoft.svg" width="44" height="41" alt="Windows Store"></a>
+                </li>
+              </ul>
+              <p class="app__platforms">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
+          </section>
         </div>
-      </section>
+      </header>
       <section class="suggestions">
         <div class="suggestions__container container">
           <p class="suggestions__slogan">Устали от серости мегаполиса?</p>
