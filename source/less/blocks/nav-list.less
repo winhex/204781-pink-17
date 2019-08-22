@@ -1,13 +1,7 @@
 .nav-list {
   .no-list;
 
-  margin-top: 3px;
-
-  font-size: 18px;
-  line-height: 32px;
-  color: #ffffff;
   text-align: center;
-  text-transform: uppercase;
 
   &--closed {
     display: none;
@@ -15,24 +9,41 @@
 
   &--opened {
     display: block;
-  }
-
-  @media (min-width: 660px) {
-    width: 100vw;
-    margin-top: 0;
-    margin-bottom: -45px;
+    margin-top: 4px;
   }
 
   @media (min-width: 960px) {
     display: flex;
-    width: 760px;
-    padding-top: 45px;
-    padding-left: 150px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
 
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: normal;
-    text-transform: none;
+.nav-list__item {
+  @media (min-width: 960px) {
+    margin-left: 80px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &--active {
+      position: relative;
+    }
+
+    &--active::after {
+      content: "";
+
+      position: absolute;
+      right: 0;
+      bottom: -2px;
+      left: 0;
+
+      height: 2px;
+
+      background: #ffffff;
+    }
   }
 }
 
@@ -43,37 +54,27 @@
 
   color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
 
-  background: #283645;
-  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 #000000;
+  background-color: #283645;
+  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
   @media (min-width: 960px) {
-    padding: 0;
+    padding: 11px 0;
 
-    background: none;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: none;
+
+    background-color: transparent;
     box-shadow: none;
   }
 }
 
-.nav-list__item {
-  position: relative;
+.nav-list__item:last-child .nav-list__link {
+  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 #000000;
 
   @media (min-width: 960px) {
-    margin-right: 80px;
-  }
-
-  &--active::after {
-    @media (min-width: 960px) {
-      content: "";
-
-      position: absolute;
-      right: 0;
-      bottom: -12px;
-      left: 0;
-
-      height: 2px;
-
-      background: #ffffff;
-    }
+    box-shadow: none;
   }
 }
