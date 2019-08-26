@@ -1,0 +1,157 @@
+.reviews {
+  padding-top: 46px;
+  padding-bottom: 36px;
+
+  @media (min-width: 660px) {
+    padding-top: 100px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: 960px) {
+    position: relative;
+
+    padding-top: 185px;
+    padding-bottom: 49px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 71px;
+      left: 50%;
+
+      width: 78.672px;
+      height: 63.789px;
+      margin-left: 2px;
+
+      background: url("../img/icon-quotes.svg") top left no-repeat;
+      background-size: 78.672px 63.789px;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.reviews__container {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 660px) {
+    width: 660px;
+  }
+
+  @media (min-width: 960px) {
+    width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.reviews__list {
+  position: relative;
+
+  @media (min-width: 960px) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.reviews__person {
+  @media (min-width: 660px) {
+    order: 2;
+  }
+}
+
+.reviews__name {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+
+  @media (min-width: 660px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 24px;
+  }
+}
+
+.reviews__about {
+  @media (max-width: 659px) {
+    .visually-hidden;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.reviews__description {
+  margin-top: 16px;
+  margin-bottom: 0;
+
+  @media (min-width: 660px) {
+    margin-top: 0;
+    margin-bottom: 36px;
+
+    font-size: 18px;
+  }
+}
+
+.reviews__nav {
+  display: none;
+
+  @media (min-width: 960px) {
+    position: absolute;
+    top: 28px;
+
+    display: block;
+    width: 22px;
+    height: 41px;
+    padding: 0;
+
+    background-size: 22px 41px;
+    border: 0;
+    opacity: 0.3;
+  }
+
+  &--previous {
+    left: 0;
+
+    background: url("../img/icon-review-arrow-left.svg") top left no-repeat;
+  }
+
+  &--next {
+    right: 0;
+
+    background: url("../img/icon-review-arrow-right.svg") top left no-repeat;
+  }
+}
+
+.reviews__nav-text {
+  .visually-hidden;
+}
+
+.reviews__pagination {
+  margin-top: 28px;
+
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
