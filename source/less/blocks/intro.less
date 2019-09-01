@@ -35,6 +35,10 @@
     padding-top: 0;
 
     background-position: center -69px;
+
+    @media (min-width: 660px) {
+      background-position: center -110px;
+    }
   }
 }
 
@@ -141,6 +145,7 @@
     }
 
     @media (min-width: 960px) {
+      width: 960px;
       min-height: 284px;
       padding-top: 64px;
       padding-bottom: 64px;
@@ -164,6 +169,13 @@
   &--gallery {
     @media (min-width: 660px) {
       width: 560px;
+      margin: 0 auto;
+    }
+  }
+
+  &--form {
+    @media (min-width: 960px) {
+      width: 900px;
       margin: 0 auto;
     }
   }
