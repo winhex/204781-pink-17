@@ -1,8 +1,22 @@
 .powered-by {
-  margin-top: 25px;
+  margin-top: 28px;
 
   font-size: 0;
   text-align: center;
+
+  @media (min-width: 660px) {
+    flex-shrink: 0;
+    width: 150px;
+    margin-top: 8px;
+    margin-bottom: 9px;
+
+    text-align: right;
+  }
+
+  @media (min-width: 960px) {
+    width: 170px;
+    margin-top: 10px;
+  }
 }
 
 .powered-by__copyright {
@@ -11,13 +25,24 @@
   padding-top: 10px;
 
   font-size: 14px;
+
+  @media (min-width: 960px) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .powered-by__link {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 27px;
   height: 34px;
   margin-left: 8px;
   margin-right: 7px;
+}
+
+.powered-by__logo {
+  @media (min-width: 960px) {
+    padding-bottom: 25px;
+  }
 }

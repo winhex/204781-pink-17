@@ -1,7 +1,9 @@
 .gallery {
-  font-size: 14px;
-  line-height: 24px;
-  color: #283645;
+  padding-top: 46px;
+
+  @media (min-width: 660px) {
+    padding-top: 92px;
+  }
 }
 
 .gallery__slogan {
@@ -10,16 +12,16 @@
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 43px;
-  padding-bottom: 50px;
+  margin-bottom: 48px;
 
   line-height: 30px;
   text-align: center;
 
   @media (min-width: 660px) {
     width: 450px;
-    padding-top: 92px;
-    padding-bottom: 75px;
+    margin-bottom: 76px;
+    padding-left: 60px;
+    padding-right: 60px;
 
     font-size: 18px;
     line-height: 30px;
@@ -27,16 +29,24 @@
 
   @media (min-width: 960px) {
     width: 575px;
-    padding-bottom: 85px;
+    margin-bottom: 88px;
   }
 }
 
 .gallery__container {
-  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  background-color: #ffffff;
+  @media (min-width: 660px) {
+    width: 660px;
+  }
 
   @media (min-width: 960px) {
-    margin: 0 auto;
+    width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }

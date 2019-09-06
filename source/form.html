@@ -5,7 +5,7 @@
     <title>Pink</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width">
-    <!--<style>
+    <!-- <style>
     html {
       background-repeat: no-repeat;
       background-position:  50% 0;
@@ -26,7 +26,7 @@
         background-image: url( "img/pg/pink-form-desktop.png" );
       }
     }
-    </style>-->
+    </style> -->
   </head>
   <body>
     <header class="page-header page-header--opened">
@@ -62,16 +62,16 @@
     <main class="page-main">
       <header class="intro">
         <div class="intro__container intro__container--inner">
-          <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <h1 class="intro__title intro__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </header>
       <section class="survey">
-        <p class="survey__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="survey__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="survey__advanced-title">Пожалуйста, заполните форму ниже:</span></p>
         <div class="survey__container">
           <form class="form" method="post" action="http://echo.htmlacademy.ru">
             <div class="form__main">
               <fieldset class="form__fieldset form__fieldset--fullname">
-                <ul>
+                <ul class="form__fieldset-inner">
                   <li class="form__text-field form__text-field--fullname">
                     <label class="form__text-label form__text-label--fullname" for="last-name">Фамилия:</label>
                     <input class="form__text-input" id="last-name" type="text" name="Фамилия" placeholder="Укажите фамилию *">
@@ -86,81 +86,83 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="form__fieldset form__fieldset--apps">
-                <legend class="form__title">С каким приложением путешествовали?</legend>
-                <ul form__radio-list>
-                  <li>
-                    <input class="form__radio-input" id="ios" type="radio" name="App" value="iOS" checked>
-                    <label class="form__radio-label" for="ios">Pink для iOS</label>
+              <fieldset class="form__fieldset form__fieldset--achievements">
+                <legend class="form__title form__title--achievements">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
+                <ul class="form__fieldset-inner form__fieldset-inner--achievements">
+                  <li class="form__checkbox-field form__checkbox-field--shark">
+                    <input class="form__checkbox-input" id="selfie" type="checkbox" name="Достижения" value="Сделал селфи с акулой" checked>
+                    <label class="form__checkbox-label" for="selfie">Сделал селфи с акулой</label>
                   </li>
-                  <li>
-                    <input class="form__radio-input" id="android" type="radio" name="App" value="Android">
-                    <label class="form__radio-label" for="android">Pink на Android</label>
+                  <li class="form__checkbox-field form__checkbox-field--beach">
+                    <input class="form__checkbox-input" id="beach" type="checkbox" name="Достижения" value="Обгорел на пляже" checked>
+                    <label class="form__checkbox-label" for="beach">Обгорел на пляже</label>
                   </li>
-                  <li>
-                    <input class="form__radio-input" id="windows" type="radio" name="App" value="Windows">
-                    <label class="form__radio-label" for="windows">Windows phone</label>
+                  <li class="form__checkbox-field form__checkbox-field--norris">
+                    <input class="form__checkbox-input" id="chuck-norris" type="checkbox" name="Достижения" value="Видел Чака Норриса">
+                    <label class="form__checkbox-label" for="chuck-norris">Видел Чака Норриса</label>
+                  </li>
+                  <li class="form__checkbox-field form__checkbox-field--souvenirs">
+                    <input class="form__checkbox-input" id="souvenirs" type="checkbox" name="Достижения" value="Накупил сувениров">
+                    <label class="form__checkbox-label" for="souvenirs">Накупил сувениров</label>
+                  </li>
+                  <li class="form__checkbox-field form__checkbox-field--tower">
+                    <input class="form__checkbox-input" id="tower" type="checkbox" name="Достижения" value="Удержал башню" checked>
+                    <label class="form__checkbox-label" for="tower">Удержал башню</label>
+                  </li>
+                  <li class="form__checkbox-field form__checkbox-field--hotel">
+                    <input class="form__checkbox-input" id="hotel" type="checkbox" name="Достижения" value="Разгромил отель">
+                    <label class="form__checkbox-label" for="hotel">Разгромил отель</label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--contacts">
-                <legend class="form__title">Контактная информация</legend>
-                <ul class="form__contacts-list">
+                <legend class="form__title form__title--contacts">Контактная информация</legend>
+                <ul class="form__fieldset-inner form__fieldset-inner--contacts">
                   <li class="form__text-field form__text-field--contacts">
-                    <div class="form__input-wrapper form__input-wrapper--contacts">
+                    <div class="form__input-wrapper form__input-wrapper--phone">
                       <input class="form__text-input form__text-input--contacts" id="telephone" type="tel" name="Номер телефона" placeholder="Номер, пожалуйста">
                     </div>
                     <label class="form__text-label form__text-label--contacts" for="telephone">Номер телефона</label>
                   </li>
                   <li class="form__text-field form__text-field--contacts">
-                    <div class="form__input-wrapper form__input-wrapper--contacts">
+                    <div class="form__input-wrapper form__input-wrapper--email">
                       <input class="form__text-input form__text-input--contacts" id="email" type="email" name="Адрес почты" placeholder="Введите почту *">
                     </div>
                     <label class="form__text-label form__text-label--contacts" for="email">Адрес почты</label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="form__fieldset form__fieldset--achievements">
-                <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
-                <ul class="form__checkbox-list">
-                  <li class="form__checkbox-field">
-                    <input class="form__checkbox-input" id="selfie" type="checkbox" name="Достижения" value="Сделал селфи с акулой" checked>
-                    <label class="form__checkbox-label" for="selfie">Сделал селфи с акулой</label>
+              <fieldset class="form__fieldset form__fieldset--apps">
+                <legend class="form__title form__title--apps">С каким приложением путешествовали?</legend>
+                <ul class="form__fieldset-inner form__fieldset-inner--apps">
+                  <li class="form__radio-field">
+                    <input class="form__radio-input" id="ios" type="radio" name="App" value="iOS" checked>
+                    <label class="form__radio-label" for="ios">Pink для iOS</label>
                   </li>
-                  <li class="form__checkbox-field">
-                    <input class="form__checkbox-input" id="chuck-norris" type="checkbox" name="Достижения" value="Видел Чака Норриса">
-                    <label class="form__checkbox-label" for="chuck-norris">Видел Чака Норриса</label>
+                  <li class="form__radio-field">
+                    <input class="form__radio-input" id="android" type="radio" name="App" value="Android">
+                    <label class="form__radio-label" for="android">Pink на Android</label>
                   </li>
-                  <li class="form__checkbox-field">
-                    <input class="form__checkbox-input" id="tower" type="checkbox" name="Достижения" value="Удержал башню" checked>
-                    <label class="form__checkbox-label" for="tower">Удержал башню</label>
-                  </li>
-                  <li class="form__checkbox-field">
-                    <input class="form__checkbox-input" id="beach" type="checkbox" name="Достижения" value="Обгорел на пляже" checked>
-                    <label class="form__checkbox-label" for="beach">Обгорел на пляже</label>
-                  </li>
-                  <li class="form__checkbox-field">
-                    <input class="form__checkbox-input" id="souvenirs" type="checkbox" name="Достижения" value="Накупил сувениров">
-                    <label class="form__checkbox-label" for="souvenirs">Накупил сувениров</label>
-                  </li>
-                  <li class="form__checkbox-field">
-                    <input class="form__checkbox-input" id="hotel" type="checkbox" name="Достижения" value="Разгромил отель">
-                    <label class="form__checkbox-label" for="hotel">Разгромил отель</label>
+                  <li class="form__radio-field">
+                    <input class="form__radio-input" id="windows" type="radio" name="App" value="Windows">
+                    <label class="form__radio-label" for="windows">Windows Phone</label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="form__fieldset form__fieldset--emotions">
-                <legend class="form__title">Опишите свои эмоции</legend>
-                <div class="form__textaria-container">
-                  <textarea class="form-textarea" name="Message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <div class="form__fieldset form__fieldset--emotions">
+                <div class="form__title form__title--emotions">Опишите свои эмоции</div>
+                <div class="form__fieldset-inner form__fieldset-inner--emotions">
+                  <textarea class="form__textarea" name="Message" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="8" cols="30"></textarea>
                 </div>
-              </fieldset>
+              </div>
             </div>
             <div class="form__footer">
               <button class="form__submit" type="submit">Отправить форму</button>
               <div class="form__note">
                 <span class="form__symbol">*</span>
-                <div class="form__note-text">* — обязательные для заполнения поля</div>
+                — обязательные
+                <span class="form__advanced-note">для заполнения</span>
+                поля
               </div>
             </div>
           </form>
@@ -173,41 +175,53 @@
           <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
           <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Pink">
         </picture>
-        <ul class="page-footer__social-list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--twitter" href="#">
-              <svg class="social-list__icon social-list__icon--twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-                <g id="W6EeEF_1_">
-                  <g>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
-                  </g>
+        <div class="page-footer__social-list social-list">
+          <a class="social-list__link social-list__link--twitter" href="#">
+            <svg class="social-list__icon social-list__icon--twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+              <g id="W6EeEF_1_">
+                <g>
+                  <path fill="#d22856" fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
                 </g>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--facebook" href="#">
-              <svg class="social-list__icon social-list__icon--facebook" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
-                <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--youtube" href="#">
-              <svg class="social-list__icon social-list__icon--youtube" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
-                <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
+              </g>
+            </svg>
+          </a>
+          <a class="social-list__link social-list__link--facebook" href="#">
+            <svg class="social-list__icon social-list__icon--facebook" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+              <path fill="#d22856" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+            </svg>
+          </a>
+          <a class="social-list__link social-list__link--youtube" href="#">
+            <svg class="social-list__icon social-list__icon--youtube" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+              <path fill="#d22856" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+            </svg>
+          </a>
+        </div>
         <div class="page-footer__powered-by powered-by">
           <span class="powered-by__copyright">Разработано</span>
           <a class="powered-by__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="powered-by__logo" width="41" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+            <svg class="powered-by__logo" width="41" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
           </a>
         </div>
       </div>
     </footer>
+    <section class="popup popup--error">
+      <div class="popup__body">
+        <div class="popup__title">Что-то пошло не так!</div>
+        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="popup__button-wrapper">
+        <button class="popup__button" type="button">ОК</button>
+      </div>
+    </section>
+    <section class="popup popup--done">
+      <div class="popup__body popup__body--done">
+        <div class="popup__title">Ваша заявка отправлена</div>
+        <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
+      </div>
+      <div class="popup__button-wrapper popup__button-wrapper--done">
+        <button class="popup__button" type="button">Закрыть окно</button>
+      </div>
+    </section>
   <script src="js/scripts.js"></script>
   </body>
 </html>
